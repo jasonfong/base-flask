@@ -28,3 +28,5 @@ Usage
         cd /vagrant
         python app.py
 6. Connect to application by browsing to this address: [http://localhost:8000](http://localhost:8000)
+
+The directory where Vagrantfile is located will be linked to the /vagrant directory inside the VM. Modifications to the files in these linked directories will be visible from inside and outside of the VM.
