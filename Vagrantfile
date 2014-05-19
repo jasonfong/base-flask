@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # VirtualBox config tweaks
   config.vm.provider "virtualbox" do |vb|
     # VirtualBox name
-    vb.name = "base-project"
+    vb.name = "base-flask"
 
     # Don't boot with headless mode
     # vb.gui = true
