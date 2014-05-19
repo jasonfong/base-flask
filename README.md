@@ -27,4 +27,4 @@ Usage
 
         cd /vagrant
         python app.py
-6. Connect to application by browsing to this address: [http://localhost:5000](http://localhost:5000)
+6. Connect to application by browsing to this address: [http://localhost:8000](http://localhost:8000)
