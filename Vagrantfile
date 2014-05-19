@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
   # Port forwarding
-  config.vm.network "forwarded_port", guest: 5000, host: 5000
+  config.vm.network "forwarded_port", guest: 8000, host: 8000
 
   # Private network
   # config.vm.network "private_network", ip: "192.168.99.99"
@@ -36,12 +36,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
     # VM settings:
     vb.customize ["modifyvm", :id, "--ostype", "Ubuntu_64"]
-    vb.customize ["modifyvm", :id, "--memory", "1024"]
-    vb.customize ["modifyvm", :id, "--cpus", "2"]
-    vb.customize ["modifyvm", :id, "--acpi", "on"]
-    vb.customize ["modifyvm", :id, "--ioapic", "on"]
-    vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
-    vb.customize ["modifyvm", :id, "--pae", "on"]
+    vb.customize ["modifyvm", :id, "--memory", "512"]
+    vb.customize ["modifyvm", :id, "--cpus", "1"]
+    # vb.customize ["modifyvm", :id, "--acpi", "on"]
+    # vb.customize ["modifyvm", :id, "--ioapic", "on"]
+    # vb.customize ["modifyvm", :id, "--hwvirtex", "on"]
+    # vb.customize ["modifyvm", :id, "--pae", "on"]
   end
 
 
